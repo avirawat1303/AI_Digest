@@ -1,4 +1,4 @@
-📩 AI Research Digest Newsletter System
+# 📩 AI Research Digest Newsletter System
 
 A Django + React application that delivers daily topic summaries and insights in multiple domains (AI, Cybersecurity, Finance, Health, Science, Technology, and more).
 
@@ -14,7 +14,7 @@ Bookmark and manage personal collections
 
 Update preferences via a responsive dashboard
 
-🚀 Features
+## 🚀 Features
 
 🔐 User authentication with JWT (login, register, logout)
 
@@ -32,7 +32,7 @@ Update preferences via a responsive dashboard
 
 🌙 Optional dark mode
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 Backend (Django + DRF):
 
@@ -58,15 +58,8 @@ Axios (API calls with JWT interceptor)
 
 TailwindCSS (UI framework)
 
-Other Tools:
 
-Git + GitHub (version control)
-
-Render/Heroku (backend deployment)
-
-Vercel/Netlify (frontend deployment)
-
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 1. Clone the repo
 git clone https://github.com/your-username/ai-digest.git
 cd ai-digest
@@ -94,7 +87,7 @@ EMAIL_USE_TLS=True
 GEMINI_API_KEY=your-gemini-api-key
 
 
-Run migrations:
+ Run migrations:
 
 python manage.py migrate
 python manage.py createsuperuser
@@ -114,7 +107,7 @@ npm start
 
 React dev server will start at http://localhost:3000.
 
-📬 Email Newsletter
+# 📬 Email Newsletter
 
 Daily cron job fetches articles from Gemini API
 
@@ -122,7 +115,7 @@ Stores them in database
 
 Sends personalized HTML emails to users
 
-🖼 Screenshots
+# 🖼 Screenshots
 
 🔑 Login/Register
 
@@ -134,15 +127,7 @@ Sends personalized HTML emails to users
 
 ⚙️ Preferences
 
-🚀 Deployment
-
-Backend (Django) → Render / Heroku
-
-Frontend (React) → Vercel / Netlify
-
-Database → SQLite (dev), PostgreSQL (prod recommended)
-
-📌 Roadmap
+# 📌 Roadmap
 
  Add more categories (Sports, Entertainment, Business)
 
@@ -156,6 +141,3 @@ Database → SQLite (dev), PostgreSQL (prod recommended)
 
 Pull requests are welcome! Please open an issue first to discuss what you’d like to change.
 
-📄 License
-
-This project is licensed under the MIT License.
