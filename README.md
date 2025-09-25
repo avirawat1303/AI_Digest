@@ -113,17 +113,7 @@ Daily cron job fetches articles from Gemini API
 
 Stores them in database
 
-Sends personalized HTML emails to users
-
-# 🖼 Screenshots
-
-🔑 Login/Register
-
-📊 Dashboard (daily articles)
-
-📂 Archive with filters
-
-⭐ Bookmarks page
+Sends personalized HTML emails to users.
 
 ⚙️ Preferences
 
