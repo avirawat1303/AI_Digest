@@ -61,3 +61,7 @@ media/
 
 # Pyre type checker
 .pyre/
+
+
+#added node moudles
+node_modules/
