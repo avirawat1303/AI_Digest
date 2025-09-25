@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -61,7 +86,11 @@ media/
 
 # Pyre type checker
 .pyre/
+<<<<<<< HEAD
 
 
 #added node moudles
 node_modules/
+=======
+>>>>>>> 345933bb1ebf8ca18b4d76260079bbd5ae77b8c9
+>>>>>>> 7cdb784827d79e4507d25764ee87d97f6763ca20
