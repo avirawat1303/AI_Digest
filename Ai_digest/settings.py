@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
     "corsheaders",
-    "core",
+    "django_crontab",
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -176,3 +177,19 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
     "AUTH_HEADER_TYPES": ("Bearer",),
 }
+
+# Email (for later use)
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = os.getenv("EMAIL_HOST", "")
+EMAIL_PORT = int(os.getenv("EMAIL_PORT", 587))
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
+EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "True").lower() in ("1","true","yes")
+DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", EMAIL_HOST_USER)
+
+# Cron jobs (placeholder - Step 2 will add the command)
+CRONJOBS = [
+    # Example (disabled until later): ('0 8 * * *', 'django.core.management.call_command', ['generate_daily_digest'])
+]
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
